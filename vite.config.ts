@@ -11,7 +11,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: "src/index.html",
-        resendDemo: "src/resend-demo.html"
+        resendDemo: "src/resend-demo.html",
+        nodemailerDemo: "src/nodemailer-demo.html"
       }
     }
   }

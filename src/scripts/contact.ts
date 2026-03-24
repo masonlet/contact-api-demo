@@ -10,6 +10,12 @@ interface ApiResponse {
   message?: string;
 }
 
+const meta = document.querySelector('meta[name="contact-api-url"]') as HTMLMetaElement | null;
+if (!meta || !meta.content)
+  throw new Error('Missing <meta name="contact-api-url">; each demo page must specify its backend URL.');
+
+const API_URL = meta.content;
+
 function validateForm(form: HTMLFormElement): ContactBody {
   const data = new FormData(form);
 
@@ -28,7 +34,7 @@ function validateForm(form: HTMLFormElement): ContactBody {
 }
 
 async function submitForm(form: ContactBody): Promise<void> {
-  const response = await fetch("/api/contact", {
+  const response = await fetch(API_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(form),
