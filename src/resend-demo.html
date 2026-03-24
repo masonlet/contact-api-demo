@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resend API Demo</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script type="module" src="scripts/contact.ts"></script>
+</head>
+<body>
+  <header>
+    <h1>Resend API Demo</h1>
+    <p>Testing the <code>/api/contact</code> endpoint using Resend.</p>
+  </header>
+  <main id="contact-page">
+    <form id="contact-form">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" class="email-input" placeholder="Enter email address.." required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" class="email-input" placeholder="Enter subject.." required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" class="email-input" placeholder="Enter message.." required></textarea>
+
+      <input type="submit" value="Send Email" class="hover-colour email-submit">
+      <div id="form-status"></div>
+    </form>
+    <a href="/contact-api-demo/" class="demo-button">← Return to Home</a>
+  </main>
+</body>
+</html>

@@ -10,8 +10,9 @@ export default defineConfig({
     minify: "esbuild",
     rollupOptions: {
       input: {
-        main: "src/index.html"
+        main: "src/index.html",
+        resendDemo: "src/resend-demo.html"
       }
     }
-  },
+  }
 });
