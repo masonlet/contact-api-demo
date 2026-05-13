@@ -3,7 +3,7 @@ import { defineConfig } from "vite"
 export default defineConfig({
   root: "./src",
   publicDir: "../public",
-  base: "/contact-api-demo/",
+  base: "https://contact-api-demo.vercel.app/",
   build: {
     outDir: "../dist",
     emptyOutDir: true,
