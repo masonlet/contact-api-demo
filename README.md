@@ -20,7 +20,7 @@ A small multi-page demo site for [contact-api](https://www.github.com/masonlet/c
 ### 1. Clone the Repository
 ```bash
 # Clone Contact API Demo
-git clone https://github.com/masonlet/contact-api-demo.git
+git clone https://github.com/contact-api/demo.git
 cd contact-api-demo
 ```
 
